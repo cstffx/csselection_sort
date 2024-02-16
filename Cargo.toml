@@ -1,0 +1,13 @@
+[package]
+name = "csinsertion_sort"
+version = "0.1.0"
+edition = "2021"
+description = "A simple insertion sort implementation for Vec"
+authors = ["Elihu Diaz Álvarez"]
+keywords = ["insertion_sort", "sort", "vec"]
+license = "MIT"
+repository = "https://github.com/cstffx/csinsertion_sort"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
