@@ -2,7 +2,7 @@
 name = "csinsertion_sort"
 version = "0.1.0"
 edition = "2021"
-description = "A simple insertion sort implementation for Vec"
+description = "Insertion sort implementation for Vec"
 authors = ["Elihu Diaz Álvarez"]
 keywords = ["insertion_sort", "sort", "vec"]
 license = "MIT"
