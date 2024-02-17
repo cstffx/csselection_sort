@@ -1,14 +1,16 @@
 #![feature(is_sorted)]
 #![feature(exclusive_range_pattern)]
 
-trait InsertionSort<T> {
+use std::ops::Index;
+
+type FnMustSwap<T> = fn(a: &T, b: &T) -> bool;
+
+trait InsertionSort<T> where T: PartialOrd {
     fn insertion_sort(&mut self);
     fn insertion_sort_by(&mut self, by: FnMustSwap<T>);
 }
 
-type FnMustSwap<T> = fn(a: &T, b: &T) -> bool;
-
-impl<T> InsertionSort<T> for Vec<T> where T: PartialOrd {
+impl <T, M, I> InsertionSort<T> for M where M: Index<I> {
     fn insertion_sort(&mut self) {
         self.insertion_sort_by(|a, b| a > b)
     }
