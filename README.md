@@ -21,17 +21,17 @@ As second argument pass a function with the form:
 ```rust 
 fn(a: &T, b: &T) -> bool;
 ```
-This function must return ``true`` when ``a`` must be most appear at the left of ``b``.
-For example, to sort a list of number in descending order ``by`` parameter can be: 
+This function must return ``true`` to indicate that ``a`` is further to the left than ``b``.
+For example, to sort a list of ``u32``, in descending order, ``by`` parameter can be: 
 ```rust
 fn desc(a: u32, b: u32) -> bool {
     a < b
 }
 ```
-This example return ``true`` when ``a=1`` and ``b==5`` in order to 
+This example returns ``true`` when ``a=1`` and ``b==5`` in order to 
 ensure that ``5`` is located at the left o ``1``.
 
-For convenience a ``asc`` and ``desc`` functions are provided. 
+For convenience ``asc`` and ``desc`` functions are provided. 
 
 ```rust
     use csselection_sort::{SelectionSort, des}; 
@@ -45,4 +45,4 @@ For convenience a ``asc`` and ``desc`` functions are provided.
     // input is now [2,1]
 ```
 
-To call ``selection_sort`` is equivalent to call ``selection_sort_by(asc)``.**
+To call ``selection_sort`` is equivalent to call ``selection_sort_by(asc)``.
