@@ -1,10 +1,10 @@
 [package]
-name = "csinsertion_sort"
+name = "csselection_sort"
 version = "0.1.2"
 edition = "2021"
-description = "Insertion sort implementation for indexable collections"
+description = "Selection sort implementation for indexable collections"
 authors = ["Elihu Diaz Álvarez"]
-keywords = ["insertion_sort", "sort", "vec", "array", "indexable"]
+keywords = ["selection", "algorithm", "sort", "vec", "array"]
 license = "MIT"
 repository = "https://github.com/cstffx/csinsertion_sort"
 

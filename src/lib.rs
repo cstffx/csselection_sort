@@ -3,11 +3,11 @@
 
 pub type FnMustSwap<T> = fn(a: &T, b: &T) -> bool;
 
-fn asc<T>(a: &T, b: &T) -> bool where T: PartialOrd {
+pub fn asc<T>(a: &T, b: &T) -> bool where T: PartialOrd {
     a > b
 }
 
-fn desc<T>(a: &T, b: &T) -> bool where T: PartialOrd {
+pub fn desc<T>(a: &T, b: &T) -> bool where T: PartialOrd {
     a < b
 }
 
